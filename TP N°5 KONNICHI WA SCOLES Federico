@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+string NombreJapones(string s);
+
+int main(int argc, char *argv[])
+{
+	string texto;
+	string k="Konnichi wa, ";
+	string p="-san."
+		cout<<"Ingrese un nombre: ";
+		  getLine(cin, texto)
+	cout<<k<<NombreJapones(texto)<<p<<endl;
+	
+	return 0;
+}
+
+string NombreJapones(string s){
+	for (i=0; i<s.size(); i++){
+		if((s[i]!='a', 'e', 'i', 'o', 'u')&&(s[i++]!= 'a', 'e', 'i', 'o', 'u')){
+			s[i++]='u';
+		}
+	}
+	return s;
+}
