@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+#include <string>
+using namespace std;
+
+string invertirFrase(string f, int n, int m);
+
+int main()
+{
+string frase;
+int i, f;
+    cout<<"Ingrese el texto: ";
+    cin>>frase;
+    cout<<"Ingrese el inicio del invertido: ";
+    cin>>i;
+    cout<<"Ingrese el final: ";
+    cin>>f;
+    cout<<invertirFrase(frase, i, f);
+
+    return 0;
+}
+string invertirFrase(string f, int n, int m){
+ reverse(f.begin() + n, f.begin() + m + 1);
+   return f;
+  
+}
